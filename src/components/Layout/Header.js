@@ -6,7 +6,6 @@ const Header = () => {
       <h2>Header component</h2>
       {/* <DesktopNav /> */}
       {/* <MobileNav /> */}
-      {/* <Cart /> */}
     </>
   );
 };
