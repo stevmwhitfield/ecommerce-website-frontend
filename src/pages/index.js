@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/Layout/Layout";
 import Head from "../components/Layout/Head";
+import Hero from "../components/Home/Hero";
 
 const HomePage = () => {
   return (
@@ -12,12 +13,9 @@ const HomePage = () => {
           description="Shop for computer accessories and peripherals to take your computer experience to the next level."
           // url=""
         />
-        <h1>Home Page</h1>
-        {/* Navigation */}
-        {/* Hero */}
+        <Hero />
         {/* TopBrands */}
         {/* Info */}
-        {/* Footer */}
       </Layout>
     </>
   );
