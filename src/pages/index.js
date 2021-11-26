@@ -13,6 +13,11 @@ const HomePage = () => {
           // url=""
         />
         <h1>Home Page</h1>
+        {/* Navigation */}
+        {/* Hero */}
+        {/* TopBrands */}
+        {/* Info */}
+        {/* Footer */}
       </Layout>
     </>
   );
