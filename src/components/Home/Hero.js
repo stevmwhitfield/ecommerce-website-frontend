@@ -31,7 +31,7 @@ const Hero = () => {
   const size = useWindowSize();
 
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.content}>
         <div className={styles.headings}>
           <h1>Featured</h1>
@@ -52,7 +52,7 @@ const Hero = () => {
           Buy Now
         </Link>
       ) : null}
-    </div>
+    </section>
   );
 };
 

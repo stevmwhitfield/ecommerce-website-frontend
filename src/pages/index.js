@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import Head from "../components/Layout/Head";
 import Hero from "../components/Home/Hero";
+import TopBrands from "../components/Home/TopBrands";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
           // url=""
         />
         <Hero />
-        {/* TopBrands */}
+        <TopBrands />
         {/* Info */}
       </Layout>
     </>
