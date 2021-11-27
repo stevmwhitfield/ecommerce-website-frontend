@@ -15,10 +15,12 @@ const ProductsPage = () => {
           description="Browse our collection of computer accessories and peripherals."
           // url=""
         />
-        <div className={styles.heading}>
-          <h1>Products</h1>
+        <div className={styles.mainWrapper}>
+          <div className={styles.heading}>
+            <h1>Product Listing</h1>
+          </div>
+          <ProductList />
         </div>
-        <ProductList />
       </Layout>
     </>
   );

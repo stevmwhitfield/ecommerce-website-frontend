@@ -10,3 +10,31 @@
     color: #ff4500;
   }
 }
+
+@media screen and (min-width: 30em) {
+  .main-wrapper {
+    margin: 64px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .heading {
+    h1 {
+      font-size: 64px;
+    }
+  }
+  .main-wrapper {
+    margin: 96px;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .heading {
+    h1 {
+      font-size: 72px;
+    }
+  }
+  .main-wrapper {
+    margin: 128px;
+  }
+}
