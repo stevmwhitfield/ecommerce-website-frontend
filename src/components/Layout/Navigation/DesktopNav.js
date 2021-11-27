@@ -28,8 +28,9 @@ const DesktopNav = () => {
           </ul>
         </nav>
         <div className={styles.cart}>
-          {/* <Cart /> */}
-          <span>Cart</span>
+          <Link to="/cart">
+            <i className={"fas fa-shopping-cart"}></i>
+          </Link>
         </div>
       </header>
     </>

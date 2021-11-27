@@ -68,7 +68,15 @@
   .cart {
     width: 30%;
     text-align: end;
-    color: yellow;
+
+    a {
+      text-decoration: none;
+
+      svg {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -93,6 +101,10 @@
         }
       }
     }
+
+    .cart a svg {
+      font-size: 24px;
+    }
   }
 }
 
@@ -104,6 +116,9 @@
     .desktop-nav ul li a {
       font-size: 24px;
     }
+    .cart a svg {
+      font-size: 36px;
+    }
   }
 }
 
@@ -111,6 +126,9 @@
   #header {
     padding-top: 32px;
     .branding span {
+      font-size: 48px;
+    }
+    .cart a svg {
       font-size: 48px;
     }
   }
