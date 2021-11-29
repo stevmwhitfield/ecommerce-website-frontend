@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>&copy; Phoenix Tech 2021. All Rights Reserverd.</p>
+        <p>&copy; Phoenix Tech 2021. All Rights Reserved.</p>
       </div>
     </footer>
   );
