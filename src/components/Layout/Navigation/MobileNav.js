@@ -17,7 +17,7 @@ const MobileNav = () => {
             <Link activeClassName={styles.activeLink} to="/">
               <div>
                 {/* svg icon */}
-                <i className={styles.icon + ` fas fa-home`}></i>
+                <i className={"fas fa-home"}></i>
                 <p>Home</p>
               </div>
             </Link>
@@ -26,7 +26,7 @@ const MobileNav = () => {
             <Link activeClassName={styles.activeLink} to="/products">
               <div>
                 {/* svg icon */}
-                <i className={styles.icon + ` fas fa-th-large`}></i>
+                <i className={"fas fa-th-large"}></i>
                 <p>Products</p>
               </div>
             </Link>
@@ -35,7 +35,7 @@ const MobileNav = () => {
             <Link activeClassName={styles.activeLink} to="/cart">
               <div>
                 {/* svg icon */}
-                <i className={styles.icon + ` fas fa-shopping-cart`}></i>
+                <i className={"fas fa-shopping-cart"}></i>
                 <p>Cart</p>
               </div>
             </Link>

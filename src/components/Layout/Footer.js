@@ -24,19 +24,19 @@ const Footer = () => {
         <div className={styles.contact}>
           <h1>Contact</h1>
           <form name="contact" action="/success" method="POST">
-            <div id={styles.nameContainer}>
+            <div>
               <label>
                 <span>Name</span>
                 <input type="text" name="name" required minLength="2" />
               </label>
             </div>
-            <div id={styles.emailContainer}>
+            <div>
               <label>
                 <span>Email</span>
                 <input type="email" name="email" required />
               </label>
             </div>
-            <div id={styles.messageContainer}>
+            <div>
               <label>
                 <span>Message</span>
                 <textarea name="message" cols="30" rows="8" required></textarea>

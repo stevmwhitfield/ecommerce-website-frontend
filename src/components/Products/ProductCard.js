@@ -1,13 +1,24 @@
 import React from "react";
-
+// import { useState } from "react";
 import * as styles from "../../styles/Products/ProductCard.module.scss";
 
-const addItemToCart = item => {
-  console.log("Added " + item.name + " to the cart!");
-};
-
 const ProductCard = ({ imgSrc, name, price }) => {
-  const item = { imgSrc, name, price };
+  // const [cartItems, setCartItems] = useState([]);
+
+  const addCartItem = (newItem) => {
+    console.log("Added " + newItem.name + " to the cart!");
+    // setCartItems(() => {
+    //   cartItems.push(newItem);
+
+    //   console.log(
+    //     "-- All items in the cart --\n" +
+    //       cartItems.forEach((item) => console.log(item.name))
+    //   );
+    // });
+  };
+
+  const newItem = { imgSrc, name, price };
+
   return (
     <div className={styles.productCard}>
       <div className={styles.imageContainer}>
@@ -15,9 +26,9 @@ const ProductCard = ({ imgSrc, name, price }) => {
       </div>
       <div className={styles.contentContainer}>
         <h2>{name}</h2>
-        <p>{`\$${price}`}</p>
+        <p>{`$${price}`}</p>
       </div>
-      <button onClick={() => addItemToCart(item)}>
+      <button onClick={() => addCartItem(newItem)}>
         <i className="fas fa-plus"></i>
       </button>
     </div>
