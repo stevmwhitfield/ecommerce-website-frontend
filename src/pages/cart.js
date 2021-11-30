@@ -3,27 +3,20 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import Head from "../components/Layout/Head";
 import ProductPreview from "../components/Cart/ProductPreview";
+import { cartData } from "../components/Products/ProductList";
 
 import * as styles from "../styles/Cart/Cart.module.scss";
 
 const CartPage = () => {
-  const itemCount = 2;
-  const testItems = [
-    {
-      imgSrc:
-        "https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png",
-      name: "Headphones 1",
-      price: "59.99",
-    },
-    {
-      imgSrc:
-        "https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png",
-      name: "Headphones 3",
-      price: "99.99",
-    },
-  ];
+  const cartItems = cartData;
+  const itemCount = cartData.length;
   let totalCost = 0;
-  testItems.forEach((item) => (totalCost += parseFloat(item.price)));
+  cartItems.forEach((item) => (totalCost += parseFloat(item.price)));
+
+  // does not work
+  const removeItem = (item) => {
+    cartItems.filter((cartItem) => cartItem === item);
+  };
 
   return (
     <>
@@ -38,26 +31,22 @@ const CartPage = () => {
             <h1>Cart</h1>
           </div>
           <div className={styles.contentContainer}>
-            <h2>Items {`[${itemCount}]`}</h2>
+            {itemCount > 0 ? (
+              <h2>Items {`[${itemCount}]`}</h2>
+            ) : (
+              <h2 style={{ textAlign: "center" }}>No items in the cart!</h2>
+            )}
             <div className={styles.cartItems}>
-              {testItems.map((item) => {
+              {cartItems.map((item) => {
                 return (
                   <ProductPreview
+                    removeItem={removeItem}
                     imgSrc={item.imgSrc}
                     name={item.name}
                     price={item.price}
                   />
                 );
               })}
-              {/* {cartItems.map((item) => {
-              return (
-                <ProductPreview
-                  imgSrc={item.imgSrc}
-                  name={item.name}
-                  price={item.price}
-                />
-              );
-            })} */}
             </div>
           </div>
           <div className={styles.checkoutContainer}>

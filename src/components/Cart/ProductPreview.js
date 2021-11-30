@@ -2,11 +2,7 @@ import React from "react";
 
 import * as styles from "../../styles/Cart/ProductPreview.module.scss";
 
-const removeCartItem = (item) => {
-  console.log("Removed " + item.name + " from the cart!");
-};
-
-const ProductPreview = ({ imgSrc, name, price }) => {
+const ProductPreview = ({ removeItem, imgSrc, name, price }) => {
   const item = { imgSrc, name, price };
   return (
     <div className={styles.productCard}>
@@ -17,7 +13,7 @@ const ProductPreview = ({ imgSrc, name, price }) => {
         <h2>{name}</h2>
         <p>{`$${price}`}</p>
       </div>
-      <button onClick={() => removeCartItem(item)}>
+      <button onClick={() => removeItem(item)}>
         <i className="fas fa-times"></i>
       </button>
     </div>

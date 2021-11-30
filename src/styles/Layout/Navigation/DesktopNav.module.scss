@@ -17,11 +17,11 @@
 
       a {
         text-decoration: none;
-        color: #ff4500;
-        transition: 0.3s all;
+        color: #fff;
+        transition: 0.5s all;
 
         &:hover {
-          color: darken(#ff4500, 10);
+          color: #ff4500;
         }
       }
     }

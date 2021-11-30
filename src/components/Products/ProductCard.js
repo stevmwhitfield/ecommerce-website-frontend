@@ -1,20 +1,9 @@
 import React from "react";
-// import { useState } from "react";
 import * as styles from "../../styles/Products/ProductCard.module.scss";
 
-const ProductCard = ({ imgSrc, sku, name, price }) => {
-  // const [cartItems, setCartItems] = useState([]);
-
+const ProductCard = ({ setCartItems, imgSrc, sku, name, price }) => {
   const addCartItem = (newItem) => {
-    console.log("Added " + newItem.name + " to the cart!");
-    // setCartItems(() => {
-    //   cartItems.push(newItem);
-
-    //   console.log(
-    //     "-- All items in the cart --\n" +
-    //       cartItems.forEach((item) => console.log(item.name))
-    //   );
-    // });
+    setCartItems((allItems) => [...allItems, newItem]);
   };
 
   const newItem = { imgSrc, sku, name, price };
