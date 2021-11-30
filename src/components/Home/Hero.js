@@ -35,7 +35,7 @@ const Hero = () => {
       <div className={styles.content}>
         <div className={styles.headings}>
           <h1>Featured</h1>
-          <h3>Bose Wireless Headphones</h3>
+          <h3>HyperX Cloud II Wired Headphones</h3>
           {size.width >= 480 ? (
             <Link className={styles.button} to="/products">
               Buy Now
@@ -43,7 +43,7 @@ const Hero = () => {
           ) : null}
         </div>
         <img
-          src="https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png"
+          src="/images/headphones.png"
           alt="Featured product -- headphones"
         />
       </div>
