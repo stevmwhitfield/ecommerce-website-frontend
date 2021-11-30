@@ -1,20 +1,56 @@
 export const products = [
   {
-    imgSrc:
-      "https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png",
-    name: "Headphones 1",
-    price: "59.99",
+    imgSrc: "/images/headphones.png",
+    sku: 990001,
+    name: "HyperX Cloud II",
+    price: 59.99,
   },
   {
-    imgSrc:
-      "https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png",
-    name: "Headphones 2",
-    price: "79.99",
+    imgSrc: "/images/keyboard.png",
+    sku: 990002,
+    name: "Razer Huntsman Mini Gaming Keyboard",
+    price: 79.99,
   },
   {
-    imgSrc:
-      "https://purepng.com/public/uploads/large/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png",
-    name: "Headphones 3",
-    price: "99.99",
+    imgSrc: "/images/mouse.png",
+    sku: 990003,
+    name: "Logitech G G203 Wired Gaming Mouse",
+    price: 19.99,
+  },
+  {
+    imgSrc: "/images/flash-drive.png",
+    sku: 990004,
+    name: "SanDisk 128GB Ultra Flair USB 3.0 Flash Drive",
+    price: 15.99,
+  },
+  {
+    imgSrc: "/images/external-ssd.png",
+    sku: 990005,
+    name: "Samsung SSD T7 Portable External SSD 1TB",
+    price: 109.99,
+  },
+  {
+    imgSrc: "/images/external-hdd.png",
+    sku: 990006,
+    name: "Seagate One Touch 1TB External HDD",
+    price: 49.99,
+  },
+  {
+    imgSrc: "/images/microphone.png",
+    sku: 990007,
+    name: "Blue Snowball USB Microphone",
+    price: 59.99,
+  },
+  {
+    imgSrc: "/images/speakers.png",
+    sku: 990008,
+    name: "Sanyun SW102 Computer Speakers",
+    price: 29.99,
+  },
+  {
+    imgSrc: "/images/monitor.png",
+    sku: 990009,
+    name: "Sceptre 27 inch QHD IPS LED Monitor",
+    price: 149.99,
   },
 ];

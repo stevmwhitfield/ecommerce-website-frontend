@@ -2,7 +2,7 @@ import React from "react";
 // import { useState } from "react";
 import * as styles from "../../styles/Products/ProductCard.module.scss";
 
-const ProductCard = ({ imgSrc, name, price }) => {
+const ProductCard = ({ imgSrc, sku, name, price }) => {
   // const [cartItems, setCartItems] = useState([]);
 
   const addCartItem = (newItem) => {
@@ -17,12 +17,15 @@ const ProductCard = ({ imgSrc, name, price }) => {
     // });
   };
 
-  const newItem = { imgSrc, name, price };
+  const newItem = { imgSrc, sku, name, price };
 
   return (
     <div className={styles.productCard}>
       <div className={styles.imageContainer}>
-        <img src={imgSrc} alt={name} />
+        <img
+          src={imgSrc ? imgSrc : "https://via.placeholder.com/256"}
+          alt={name}
+        />
       </div>
       <div className={styles.contentContainer}>
         <h2>{name}</h2>

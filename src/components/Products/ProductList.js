@@ -8,10 +8,17 @@ import * as styles from "../../styles/Products/ProductList.module.scss";
 const ProductList = () => {
   return (
     <div className={styles.products}>
-      {products.map((product, index) => {
-        const { imgSrc, name, price } = product;
+      {products.map((product) => {
+        const { imgSrc, sku, name, price } = product;
+        console.log("image source: " + imgSrc);
         return (
-          <ProductCard key={index} imgSrc={imgSrc} name={name} price={price} />
+          <ProductCard
+            key={sku}
+            imgSrc={imgSrc}
+            sku={sku}
+            name={name}
+            price={price}
+          />
         );
       })}
     </div>
